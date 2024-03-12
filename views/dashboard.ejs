@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .logout-container {
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 40px;
+        width: 400px;
+        text-align: center;
+      }
+      .logout-container h2 {
+        margin-bottom: 20px;
+      }
+      .logout-container p {
+        margin-bottom: 20px;
+        /* padding: 10px;*/
+      }
+      .logout-btn {
+        background-color: #dc3545;
+        color: #fff;
+        padding: 10px 50px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration-line: none;
+      }
+      .logout-btn:hover {
+        background-color: #c82333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logout-container">
+      <h2>Logout</h2>
+      <p>Are you sure you want to logout?</p>
+      <form method="post">
+        <a href="/logout" type="submit" class="logout-btn">Logout</a>
+        <br />
+        <br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
